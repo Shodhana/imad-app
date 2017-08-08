@@ -15,3 +15,8 @@ img.onclick=function () {
     var intrvl=setInterval(moveRight,50);
      
 }
+
+var button=document.getElementById('counter');
+button.onclick=function() {
+    
+}
