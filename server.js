@@ -18,7 +18,7 @@ app.get('/article-two',function(req,res){
 });
 
 var count=0;
-app.get('/article-two',function(req,res){
+app.get('/counter',function(req,res){
 count=count+1;
 res.send(count.toString());
 });
