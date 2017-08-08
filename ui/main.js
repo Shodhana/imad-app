@@ -25,3 +25,9 @@ btn.onclick = function () {
    req.send(null);
    
 };
+
+
+//Submit name
+var nametext=document.getElementById('text');
+nametext=nametext.value;
+var submit=document.getElementById('sub');
