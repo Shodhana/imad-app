@@ -5,6 +5,12 @@ ele.innerHTML="Boooo Yaaaa!";
 
 //image
 var img=document.getElementById('madi');
+function moveRight() {
+    marginLeft=marginLeft+10;
+    img.style.marginLeft=marginLeft+'px';
+}
+
 img.onclick=function () {
-    img.style.marginLeft='100px';
+    var intrvl=setInterval(moveRight,100);
+     
 }
