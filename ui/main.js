@@ -16,10 +16,10 @@ img.onclick=function () {
      
 }
 
-var button=document.getElementById('counter');
-var c=0;
+
 button.onclick=function () {
-    
+    var button=document.getElementById('counter');
+    var c=0;
     //pass counter variable to span value
     var span=document.getElementById('count');
     c=c+1;
