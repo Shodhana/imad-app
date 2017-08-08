@@ -2,15 +2,26 @@ console.log('Loaded!');
 
 
 var btn=document.getElementById('counter');
-var c=0;
+
 btn.onclick = function () {
     
-    //make req to counter
+    //Create request object
     var req=new XMLHttpRequest();
     
-    //pass counter variable to span value
-    c=c+1;
-    var span=document.getElementById('count');
+    //capture the Response and record
+    req.onreadystatechange=function () {
+        if(req.readyState===XMLHttpRequest.DONE) {
+            //take action
+            if(req.status===200) {
+                var counter=req.responseText;
+                var span=document.getElementById('count');
+                span.innerHTML=counter.toString();
+            }
+        }
+    };
+    
+   //Make Req
+   req.open('GET','http://shodhanab.imad.hasura-app.io/counter',true);
+   req.send(null);
    
-    span.innerHTML=c.toString();
 };
