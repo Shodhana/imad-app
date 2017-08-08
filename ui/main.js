@@ -4,7 +4,7 @@ ele.innerHTML="Boooo Yaaaa!";
 
 
 //image
-var image=document.getElementById('madi');
-image.onClick=function () {
-    image.style.marginLeft='100px';
+var img=document.getElementById('madi');
+img.onClick=function () {
+    img.style.marginLeft='100px';
 }
