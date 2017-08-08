@@ -5,6 +5,6 @@ ele.innerHTML="Boooo Yaaaa!";
 
 //image
 var img=document.getElementById('madi');
-img.onClick=function () {
+img.onclick=function () {
     img.style.marginLeft='100px';
 }
