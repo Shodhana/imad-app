@@ -17,6 +17,11 @@ app.get('/article-two',function(req,res){
     res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
 });
 
+var count=0;
+app.get('/article-two',function(req,res){
+count=count+1;
+res.send(count.toString());
+});
 app.get('/article-three',function(req,res){
    res.sendFile(path.join(__dirname, 'ui', 'article-three.html'));
 });
