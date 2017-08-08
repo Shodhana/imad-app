@@ -2,7 +2,7 @@ console.log('Loaded!');
 
 
 var btn=document.getElementById('counter');
-btn.onclick=function () {
+btn.onclick = function () {
     
     var c=0;
     //pass counter variable to span value
