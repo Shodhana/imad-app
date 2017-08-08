@@ -1,8 +1,8 @@
 console.log('Loaded!');
 
 
-var button=document.getElementById('counter');
-button.onclick=function () {
+var btn=document.getElementById('counter');
+btn.onclick=function () {
     
     var c=0;
     //pass counter variable to span value
